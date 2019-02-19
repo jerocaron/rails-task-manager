@@ -1,0 +1,14 @@
+<%= form_for(@task) do |f| %>
+<div>
+<%= f.label :title %>
+<%= f.text_field :title, class: 'form-control'%>
+</div>
+<div>
+<%= f.label :details %>
+<%= f.text_field :details, class: 'form-control' %>
+</div>
+<div>
+<%= f.check_box :completed, {}, "true", "false"%>
+</div>
+<%= f.submit class: 'btn btn-primary' %>
+<% end %>
